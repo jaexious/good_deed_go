@@ -1,0 +1,20 @@
+===============================
+
+1. Install Python 3.10+ (preferably at Microsoft Store for convenience)
+
+2. Place folder at your desktop (for convience)(optional)
+
+2. Open Command Prompt and type:
+   cd C:\Users\[PCNAME]\Desktop\GoodDeedGo
+
+3. Install the required packages:
+   pip install --user flask flask-sqlalchemy pillow google-generativeai werkzeug psycopg2-binary
+
+4. (optional) Set your Gemini API key:
+   set GEMINI_API_KEY=your-api-key-here
+
+5. Run the app:
+   python main.py
+
+6. Open your browser and go to:
+   http://localhost:5000
