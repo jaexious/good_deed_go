@@ -174,3 +174,11 @@ def nearby_challenges():
             'completions': challenge.get_completion_count()
         })
     return jsonify(challenge_data)
+
+@app.route("/status")
+def status():
+    return {
+        "status": "✅ Backend is running",
+        "model": "⚠️ Not loaded (TensorFlow disabled)",
+        "database": "🗃️ Active (assumed if db import didn't crash)"
+    }
